@@ -61,7 +61,7 @@
    ============================================================ */
 .yasb-bar {
     background-color: var(--crust);
-    padding: 0 12px;
+    padding: 0 6px;
     margin: 0;
 }
 
@@ -75,8 +75,14 @@
     margin-right: 2px;
     border-radius: 12px;
 }
+.widget .icon {
+    padding: 0 2px;
+}
 .widget .label {
     padding: 0 2px;
+}
+.widget .label-alt {
+    padding: 0px 2px;
 }
 
 /* ============================================================
@@ -408,7 +414,6 @@
    KOMOREBI CONTROL
    ============================================================ */
 .komorebi-control-widget:hover {
-    padding: 0 6px;
     background-color: var(--crust);
 }
 
@@ -420,7 +425,6 @@
 .komorebi-control-widget .icon {
     font-size: 16px;
     color: var(--subtext0);
-    padding-left: 0px;
 }
 .komorebi-control-widget .icon:hover {
     color: var(--text);
@@ -534,9 +538,8 @@
 .systray             { 
     padding: 0 2spx; 
     border: 0px solid;
-    background-color: var(--surface2);
+    background-color: var(--crust);
  }
-.systray:hover       { background-color: var(--crust); }
 .systray .button {
     border-radius: 12px;
     padding: 4px;
@@ -578,7 +581,6 @@
    ============================================================ */
 .open-meteo-widget:hover {
     background-color: var(--crust);
-    padding: 0 6px;
 }
 .open-meteo-widget .icon  { color: #f6e3b4; padding-right: 4px; }
 .open-meteo-widget .label { color: var(--text); }
@@ -869,22 +871,23 @@
 /* ============================================================
    VOLUME WIDGET
    ============================================================ */
-/* 1. LỚP CHA: Chỉ cần thêm màu nền (bo góc và khoảng cách đã có sẵn từ .widget) */
 .volume-widget {
-    background-color: transparent;
+    background-color: var(--crust);
+    padding: 0 6px;
+    border-radius: 12px;
+}
+.volume-widget .icon   { color: var(--blue); }
+.volume-widget .label  { 
+    color: var(--text); 
+    font-size: 14px; 
+}
+/* Menu popup*/
+.audio-menu {
+    background-color: var(--crust); 
+    min-width: 300px;
 }
 
-/* 2. HOVER: Hoạt động hoàn hảo ngay trên lớp cha */
-.volume-widget:hover {
-    background-color: var(--mantle);
-}
-
-/* 3. LỚP CON: Xóa sạch mọi thứ để không bị chồng chéo mask gây ra viền đen */
-.volume-widget .icon   { color: var(--blue); padding: 0 4px; }
-.volume-widget .label  { color: var(--text); font-size: 14px; margin: 0 2px 0 0; }
-
-/* Volume (Audio) Menu */
-.audio-menu            { background-color: var(--crust); min-width: 300px; }
+/* System volume */
 .audio-menu .system-volume-container .volume-slider { border: none; }
 .audio-menu .audio-container .device {
     background-color: transparent;
@@ -917,10 +920,10 @@
     background-color: var(--crust);
 }
 .audio-menu .apps-container .app-volume .app-icon-container {
-    min-width: 20px;
-    min-height: 20px;
-    max-width: 20px;
-    max-height: 20px;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
     border-radius: 6px;
     margin-right: 8px;
 }
@@ -928,8 +931,8 @@
 /* ============================================================
    WIFI WIDGET
    ============================================================ */
-.wifi-widget:hover    { background-color: var(--mantle); }
-.wifi-widget .icon    { color: var(--yellow); margin: 0 2px 0 0; }
+.wifi-widget:hover   { background-color: var(--crust); }
+.wifi-widget .icon    { color: var(--yellow); }
 .wifi-widget .label   { color: var(--text); font-size: 14px; margin: 0 2px 0 0; }
 
 /* WiFi Menu */
@@ -1012,7 +1015,7 @@
 /* ============================================================
    LANGUAGE WIDGET
    ============================================================ */
-.language-widget:hover{
+.language-widget{
     background-color: var(--crust);
 }
 .language-widget .label,
