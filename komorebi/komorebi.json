@@ -1,0 +1,189 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.41/schema.json",
+  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 0,
+  "default_container_padding": 3,
+  "border": true,
+  "border_implementation": "Windows",
+  "border_style": "System",
+  "border_width": 0,
+  "border_offset": 0,
+
+  "theme": {
+    "palette": "Base16",
+    "name": "BlackMetal",
+    "unfocused_border": "Base03",
+    "bar_accent": "Base0D"
+  },
+  
+  "mouse_follows_focus": false,
+  "transparency": false,
+  "transparency_alpha": 240,
+  "transparency_ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "YouTube",
+      "matching_strategy": "Contains"
+    }
+  ],
+
+  "animation": {
+    "enabled": true,
+    "duration": 400,
+    "fps": 60,
+    "style":{
+      "movement":"EaseOutBack",
+      "transparency":"Linear"
+    }
+  },
+
+  "stackbar":{
+    "height": 24,
+    "mode": "Never",  
+    "label": "Title",
+    "tabs": {
+        "width": 200,
+        "font_size": 16
+    }
+  },
+
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "Seiki",
+          "layout": "BSP"
+        },
+        {
+          "name": "Chat",
+          "layout": "BSP",
+          "workspace_rules": [
+            { "kind": "Exe", 
+              "id": "Zalo.exe", 
+              "matching_strategy": "Equals" 
+            },
+            { "kind": "Exe", 
+              "id": "Discord.exe", 
+              "matching_strategy": "Equals" 
+            },
+            { "kind": "Title", 
+              "id": "Messenger", 
+              "matching_strategy": "Contains" 
+            }
+          ]
+        },
+        {
+          "name": "Music",
+          "layout": "BSP",
+          "workspace_rules": [
+            { 
+              "kind": "Title", 
+              "id": "YouTube Music", 
+              "matching_strategy": "StartsWith" 
+            },
+            { 
+              "kind": "Exe", 
+              "id": "Spotify.exe", 
+              "matching_strategy": "Equals" 
+            }
+          ]
+        },
+        {
+          "name": "IV",
+          "layout": "BSP"
+        },
+        {
+          "name": "V",
+          "layout": "BSP"
+        },
+        {
+          "name": "VI",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ],
+
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "javaw.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Picture in picture",
+      "matching_strategy":"Equals"
+    }
+  ],
+
+  "floating_applications": [
+    {
+      "kind": "Title",
+      "id": "Discord Updater",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "transmission-qt.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "th20.exe",
+      "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Exe",
+      "id": "th19.exe",
+      "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Exe",
+      "id": "th15.exe",
+      "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Exe",
+      "id": "th14.exe",
+      "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Exe",
+      "id": "th08.exe",
+      "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Exe",
+      "id": "th07.exe",
+      "matching_strategy": "StartsWith"
+    },
+    {
+      "kind": "Title",
+      "id": "Screenbox",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "explorer.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Vivaldi Settings",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "Affinity.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "prismlauncher.exe",
+      "matching_strategy": "Equals"
+    }
+  ]
+}
