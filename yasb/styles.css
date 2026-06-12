@@ -70,9 +70,7 @@
    ============================================================ */
 .widget {
     padding: 0 6px;
-    margin: 4px 0;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 4px 2;
     border-radius: 12px;
 }
 .widget .icon {
@@ -880,6 +878,7 @@
 .volume-widget .label  { 
     color: var(--text); 
     font-size: 14px; 
+    margin: 0 2px 0 0;
 }
 /* Menu popup*/
 .audio-menu {
@@ -1022,6 +1021,7 @@
 .language-widget .label.alt {
     color: var(--text);
     font-size: 14px;
+    margin: 0 2px 2 2;
 }
 
 .language-menu {

@@ -446,7 +446,7 @@ widgets:
     options:
       label: "\uf011"
       uptime: True
-      blur: true
+      blur: false
       blur_background: True
       animation_duration: 200
       button_row: 5
