@@ -84,6 +84,11 @@
               "matching_strategy": "StartsWith" 
             },
             { 
+              "kind": "Title", 
+              "id": "Screenbox", 
+              "matching_strategy": "EndsWith" 
+            },
+            { 
               "kind": "Exe", 
               "id": "Spotify.exe", 
               "matching_strategy": "Equals" 
